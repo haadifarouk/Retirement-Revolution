@@ -15,24 +15,49 @@
                 <h1>We Are <span>Launching</span>  Soon</h1>
                 <div class="launch-time">
                     <div>
-                        <p>00</p>
+                        <p id="days">00</p>
                         <span>Days</span>
                     </div>
                     <div>
-                        <p>00</p>
+                        <p id="hours">00</p>
                         <span>Hours</span>
                     </div>
                     <div>
-                        <p>00</p>
+                        <p id="minutes">00</p>
                         <span>Minutes</span>
                     </div>
                     <div>
-                        <p>00</p>
+                        <p id="seconds">00</p>
                         <span>Seconds</span>
                     </div>
                 </div> 
             </div>
             <img src="assets/img/rocket.png" class="rocket">
         </div>
+
+        <script>
+            var countDownDate = new Date("Feb 8, 2024 08:00:00").getTime();
+            var x = setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+
+                if(distance <0 ){
+                    clearInterval(x)
+                }
+
+            },1000);
+
+
+        </script>
 </body>
 </html>
