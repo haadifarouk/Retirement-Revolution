@@ -24,3 +24,12 @@ form > button {
 .form-footer{
     @apply text-xs text-center my-8
 }
+
+.current{
+    @apply text-blue-400
+}
+
+
+nav a.current{
+    @apply text-blue-400
+}
