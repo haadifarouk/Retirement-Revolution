@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* form styles */
+
+form > input, form > label {
+        display: block;
+}
+
+form > label {
+    @apply text-xs text-gray-600 my-4
+}
+
+form > input {
+    @apply w-full mx-auto p-2
+}
+
+form > button {
+    @apply w-full rounded-sm py-2 text-xs
+}
+
+.form-footer{
+    @apply text-xs text-center my-8
+}
