@@ -8,6 +8,9 @@ module.exports = {
           'blueish' : '#2282C6',
 
       },
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+      }
     },
   },
   plugins: [],

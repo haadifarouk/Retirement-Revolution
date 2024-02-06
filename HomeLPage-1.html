@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<body>
-    <div class="flex flex-col sm:max-w-5xl m-auto">
+<body class="font-sans">
+    < class="flex flex-col sm:max-w-5xl m-auto">
         <!-- img and nav container -->
         <header class="sticky top-0 z-10">
             <div class="flex flex-row mt-4 mb-6 align-baseline">
@@ -27,42 +27,56 @@
         </header>
 
             <section id="main">
-                <div class="mt-6 opacity-90 mb-4 mx-4 rounded-md bg-gray-300 flex-col sm:flex-row-reverse flex p-10 shadow-lg h-[500px]" style="background-image: url(assets/img/carousel1.png);">
+                <div class="carousel">
+                <div class="mt-6 opacity-90 mb-4 mx-4 rounded-lg bg-gray-300 flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg h-[420px] bg-left-bottom bg-contain" style="background-image: url(assets/img/carousel1.png);">
                 <div class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 text-white">
-                    <h2 class="text-5xl">RETIREMENT</h2>
-                    <h3 class="text-3xl">REVOLUTION <span class="text-kindablue font-bold">2024</span></h3>
-                    <p class="text-xs text-white">
+                    <h2 class="text-7xl mt-6 font-semibold">RETIREMENT</h2>
+                    <h3 class="text-5xl mt-2 font-semibold">REVOLUTION 
+                        <span class="text-kindablue font-extrabold">2024</span>
+                    </h3>
+                    <p class="text-lg text-white mt-3 mr-20 font-thin leading-5">
                         Embark on a transformative journey towards a vibrant retirement. Join us for an action-packed seminar series designed to empower you with the knowledge and skills designed help you secure a prosperous future after retirement.
                     </p>
-                    <button class="px-4 py-4 bg-kindablue text-xs my-3 rounded-sm w-3/6 text-center transition-colors hover:bg-blue-600">Register</button>
+                    <button class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-2/5 text-center transition-colors hover:bg-blue-600 rounded-md">
+                        Register
+                        <i class="fa-solid fa-arrow-right pl-2"></i>
+                    </button>
+                    <div id="carousel-buttons">
+                        <span class="w-2 h-2 rounded-full bg-black mr-3"></span>
+                        <span class="w-2 h-2 rounded-full bg-black mr-3"></span>
+                        <span class="w-2 h-2 rounded-full bg-black mr-3"></span>
+                    </div>
                 </div>
+            </div>
             </div>
             </section>
             
             <div class="flex bg-[#DCEDF9] mt-4 py-8 max-w-full">
                 <div class="flex flex-row m-auto ">
                     <p class="text-xs font-bold mx-4 relative translate-y-1/2">DELIVERED IN COLLABORATION WITH</p>
-                    <img src="assets/img/turtle-consulting.png" alt="">
+                    <img src="assets/img/turtle-consulting.png" alt="Turtle Consulting" class="w-20 h-20">
                 </div>
             </div>
-            <div class="py-14 text-center text-kindablue font-bold text-xl">
-                <section id="about"></section>
-                <!-- About section -->
-                <h3>ABOUT THE SPEAKER</h3>
-            </div>
-                    <div class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse">
-                        <div class="flex flex-col w-4/6 sm:w-1/2 px-4 m-auto sm:m-0">
-                            <p class="text-xs ">Daniel Young is a multi-faceted and dynamic serial entrepreneur with a diverse range of interests and a track record of success across various industries.  With a passion for aviation and aerospace, education, manufacturing, food, training, construction, and numerous other sectors, Daniel’s entrepreneurial journey which began since 1985, has been marked by a constant pursuit of excellence and innovation.
-                                </p>
-                            <p class="text-xs mt-4">     
-                                With a natural inclination towards identifying opportunities and a bold determination to turn them into profitable ventures, Daniel has established himself as a seasoned businessman. His thirst for knowledge and his unwavering commitment to personal growth have been key drivers of his success, allowing him to stay ahead in an ever-evolving business landscape in Nigeria.
-                                </p>
-                            <label class="text-xs text-kindablue my-4" for="">
-                                More about the Speaker
-                            </label>
-                        </div>
-                        <img class="h-1/8 w-1/3 mb-8 sm:m-0 m-auto" src="assets/img/daniel-young.png" alt="">
+
+            <!-- About section -->
+            <section id="about">
+                <div class="py-14 text-center text-kindablue font-bold text-xl">
+                    <h3 class="text-4xl font-bold">ABOUT THE SPEAKER</h3>
+                </div>
+                <div class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse">
+                    <div class="flex flex-col w-4/6 sm:w-1/2 px-4 m-auto sm:m-0">
+                        <p class="text-lg">
+                            Daniel Young is a multi-faceted and dynamic serial entrepreneur with a diverse range of interests and a track record of success across various industries. With a passion for aviation and aerospace, education, manufacturing, food, training, construction, and numerous other sectors, Daniel’s entrepreneurial journey which began since 1985, has been marked by a constant pursuit of excellence and innovation.
+                            </p>
+                        <p class="text-lg mt-4">     
+                            With a natural inclination towards identifying opportunities and a bold determination to turn them into profitable ventures, Daniel has established himself as a seasoned businessman. His thirst for knowledge and his unwavering commitment to personal growth have been key drivers of his success, allowing him to stay ahead in an ever-evolving business landscape in Nigeria.
+                            </p>
+                        <label class="text-xs text-kindablue my-4" for="">
+                            More about the Speaker
+                        </label>
                     </div>
+                    <img class="h-1/8 w-1/3 mb-8 sm:m-0 m-auto" src="assets/img/daniel-young.png" alt="">
+                </div>
             </section>
             
             <!-- dates and location -->
@@ -142,11 +156,12 @@
             <footer class="bg-kindablue pt-12 pb-10">
                 <div class="flex flex-row text-white text-xs mt-4 justify-center">
                     <p class="mr-4">CONNECT WITH US</p>
-                    <i class="mr-4">F</i>
-                    <i class="mr-4">X</i>
-                    <i class="mr-4">Y</i>
+                    <i class="fa-brands fa-facebook mr-4"></i>
+                    <i class="fa-brands fa-x-twitter mr-4"></i>
+                    <i class="fa-brands fa-youtube mr-4"></i>
                 </div>
             </footer>
+            <script src="https://kit.fontawesome.com/fbce1fd5a0.js" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
