@@ -930,6 +930,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -962,6 +967,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -1057,7 +1067,7 @@ nav a.current {
   top:50%;
   position: absolute;
   transform: translateY(-50%);
-  color: rgb(0, 119, 255);
+  color: black;
 }
 
 .content h1{
@@ -1066,7 +1076,7 @@ nav a.current {
 }
 
 .content h1 span{
-  color: skyblue ;
+  color: #2083C5 ;
 }
 
 .launch-time{

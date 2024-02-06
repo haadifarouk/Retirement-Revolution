@@ -54,7 +54,7 @@ nav a.current{
     top:50%;
     position: absolute;
     transform: translateY(-50%);
-    color: rgb(0, 119, 255);
+    color: black;
 }
 
 .content h1{
@@ -63,7 +63,7 @@ nav a.current{
 }
 
 .content h1 span{
-    color: skyblue ;
+    color: #2083C5 ;
 }
 
 .launch-time{
