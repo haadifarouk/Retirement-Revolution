@@ -33,3 +33,67 @@ form > button {
 nav a.current{
     @apply text-blue-400
 }
+
+/* countdown styles */
+
+.container{
+    width: 100vw;
+    height: 100vh ;
+    background-position: center;
+    background-size: cover;
+    padding:0 8% ;
+}
+
+.logo{
+    width:60px;
+    padding:20px 0;
+    cursor: pointer;
+}
+
+.content{
+    top:50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.content h1{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.content h1 span{
+    color: #2083C5 ;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size:60px;
+    margin-bottom:  -14px;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right:10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
