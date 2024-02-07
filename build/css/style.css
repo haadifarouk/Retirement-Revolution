@@ -805,6 +805,30 @@ video {
   width: 100%;
 }
 
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.min-w-0 {
+  min-width: 0px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -865,6 +889,10 @@ video {
 
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .text-nowrap {
