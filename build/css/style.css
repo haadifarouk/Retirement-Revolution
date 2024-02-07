@@ -799,6 +799,10 @@ video {
   flex-direction: column-reverse;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
 .justify-center {
   justify-content: center;
 }
