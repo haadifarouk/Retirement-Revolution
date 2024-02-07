@@ -578,6 +578,10 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -757,6 +761,10 @@ video {
   height: 5rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -805,44 +813,20 @@ video {
   width: 100%;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-0 {
-  width: 0px;
-}
-
-.min-w-0 {
-  min-width: 0px;
-}
-
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-full {
   max-width: 100%;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
-
-.shrink {
-  flex-shrink: 1;
+.origin-top {
+  transform-origin: top;
 }
 
 .-translate-y-16 {
@@ -875,6 +859,10 @@ video {
   place-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -887,12 +875,18 @@ video {
   gap: 0.5rem;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.text-wrap {
-  text-wrap: wrap;
+.self-end {
+  align-self: flex-end;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .text-nowrap {
@@ -986,6 +980,11 @@ video {
   padding-right: 4rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1036,12 +1035,18 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-6 {
@@ -1060,10 +1065,6 @@ video {
   padding-top: 3rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1074,10 +1075,6 @@ video {
 
 .text-right {
   text-align: right;
-}
-
-.align-baseline {
-  vertical-align: baseline;
 }
 
 .font-sans {
@@ -1104,11 +1101,6 @@ video {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1127,6 +1119,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1195,6 +1192,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blueish {
+  --tw-text-opacity: 1;
+  color: rgb(34 130 198 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -1372,6 +1374,15 @@ nav a.current {
   color: rgb(32 131 197 / var(--tw-text-opacity));
 }
 
+.hover\:text-blueish:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 130 198 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
 @media (min-width: 640px) {
   .sm\:m-0 {
     margin: 0px;
@@ -1396,10 +1407,6 @@ nav a.current {
 
   .sm\:w-1\/4 {
     width: 25%;
-  }
-
-  .sm\:w-4\/6 {
-    width: 66.666667%;
   }
 
   .sm\:w-\[250px\] {
@@ -1430,6 +1437,30 @@ nav a.current {
     justify-content: space-between;
   }
 
+  .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:text-wrap {
     text-wrap: wrap;
   }
@@ -1451,18 +1482,26 @@ nav a.current {
     text-align: left;
   }
 
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }

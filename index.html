@@ -8,22 +8,44 @@
     <title>Home</title>
 </head>
 <body class="font-sans">
-    <div class="flex flex-col sm:max-w-5xl m-auto">
+    <div class="flex flex-col sm:max-w-5xl m-auto min-w-xl">
         <!-- img and nav container -->
         <header class="sticky top-0 z-10">
-            <div class="flex flex-row mt-4 mb-6 align-baseline">
+            <section class="max-w-4xl mx-auto flex px-2 py-4 justify-between items-center">
                 <!-- logo -->
                 <a href="./HomeLPage-1.html">
                     <img src="./assets/img/logo.png" alt="logo" class="h-14 w-10">
                 </a>
                 <!-- nav bar -->
-                <nav class="text-xs text-gray-500 sm:w-4/6 flex sm:justify-between w-0.6 text-center m-auto pt-6 pb-3 shadow-lg px-10 shrink-0 rounded-md bg-white">
+                <button id="hamburger-button" class="text-5xl text-blueish md:hidden cursor:pointer">
+                        &#9776;
+                </button>
+                <nav class="bg-white text-kindagray shadow-lg text-xs py-4 px-8 md:flex rounded-lg m-auto hidden space-x-4 sm:space-x-16">
                     <a href="#main" class="current"><span class="">Home</span></a>
                     <a href="#about">About the Speaker</a>
                     <a href="#schedule">Schedule</a>
                     <a href="#course" >Course Overview</a>
                 </nav>
-            </div>
+            </section>
+            <section id="mobile-menu" class="absolute top-0 bg-gray-300 text-grayish w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu">
+                <button id="close-button" class="text-8xl self-end px-6">
+                    &times;
+                </button>
+                 <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                    <a href="#main" class="w-full text-center py-6 hover:text-blueish">
+                        Home
+                    </a>
+                    <a href="#about" class="w-full text-center py-6 hover:text-blueish">
+                        About The Speaker
+                    </a>
+                    <a href="#schedule" class="w-full text-center py-6 hover:text-blueish">
+                        Schedule
+                    </a>
+                    <a href="#course" class="w-full text-center py-6 hover:text-blueish">
+                        Course Overview
+                    </a>
+                </nav>
+            </section>
         </header>
 
             <section id="main">
@@ -217,7 +239,11 @@
                     <i class="fa-brands fa-youtube mr-4"></i>
                 </div>
             </footer>
-            <script src="https://kit.fontawesome.com/fbce1fd5a0.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/fbce1fd5a0.js" crossorigin="anonymous">
+            </script>
+            <script src="assets/js/togglemenu.js">
+
+            </script>
     </div>
 </body>
 </html>
