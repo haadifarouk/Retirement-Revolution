@@ -7,59 +7,36 @@
     <title>GET READY....</title>
 </head>
 <body class="bg-gray-300">
-        <div class="container">
-            <img src="./assets/img/logo.png" alt="logo" class="logo">
+        <div class="container text-center mx-auto w-5/6">
+            <img src="./assets/img/logo.png" alt="logo" class="mx-auto w-5 mt-10">
 
-            <div class="content">
-                <h1>RETIREMENT</h1>
-                <h2 class="font-bold text-xl">REVOLUTION <span class="text-kindablue font-bold">2024</span> </h2>
-                <p class="text-gray-400 mt-4">Website Is Under Maintenance</p>
-                <h1>We Are <span>Launching</span>  Soon</h1>
-                <div class="launch-time">
-                    <div>
+            <div class="">
+                <h1 class="text-xl font-bold mt-5">RETIREMENT</h1>
+                <h2 class="font-bold text-sm">REVOLUTION <span class="text-kindablue font-extrabold">2024</span> </h2>
+                <h1 class="text-3xl text-grayish mt-28"> We're <span class="text-kindablue">Launching </span> Soon! </h1>
+                <div class="launch-time text-white grid grid-flow-row gap-2 mt-10">
+                    <div class="bg-kindablue rounded-lg">
                         <p id="days">00</p>
                         <span>Days</span>
                     </div>
-                    <div>
+                    <div class="bg-kindablue rounded-lg">
                         <p id="hours">00</p>
                         <span>Hours</span>
                     </div>
-                    <div>
+                    <div class="bg-kindablue rounded-lg">
                         <p id="minutes">00</p>
                         <span>Minutes</span>
                     </div>
-                    <div>
+                    <div class="bg-kindablue rounded-lg">
                         <p id="seconds">00</p>
                         <span>Seconds</span>
                     </div>
                 </div> 
             </div>
+            <p class="text-grayish mt-8">The Website Is Under Construction</p>
             <img src="assets/img/rocket.png" class="rocket">
         </div>
 
-        <script>
-            var countDownDate = new Date("Feb 8, 2024 08:00:00").getTime();
-            var x = setInterval(function(){
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;
-
-                if(distance <0 ){
-                    clearInterval(x)
-                }
-
-            },1000);
-
-
-        </script>
+        <script src="./assets/js/countdown.js"></script>
 </body>
 </html>

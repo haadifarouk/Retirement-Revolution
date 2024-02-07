@@ -6,6 +6,7 @@ module.exports = {
       colors:{
           'kindablue' : '#2083C5',
           'blueish' : '#2282C6',
+          'grayish' : '#515456'
 
       },
       fontFamily: {
