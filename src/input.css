@@ -101,4 +101,6 @@ nav a.current{
     }
 }
 
-/* courses dropdown */
+.white-button{
+    @apply my-4 text-kindablue border m-auto px-4 py-2 border-blueish rounded-md
+}

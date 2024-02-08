@@ -16,7 +16,7 @@
       <!-- img and nav container -->
       <header class="sticky top-0 z-10">
         <section
-          class="max-w-4xl mx-auto flex px-2 py-4 justify-between items-center"
+          class="max-w-4xl m-auto flex px-4 mx-2 py-4 justify-between md:bg-transparent bg-white z-10 shadow-lg md:shadow-sm rounded-md items-center"
         >
           <!-- logo -->
           <a href="./index.html">
@@ -198,7 +198,7 @@
             </li>
           </ul>
           <!-- Carousel Buttons -->
-          <div class="carousel-buttons absolute bottom-0  z-0 right-0">
+          <div class="carousel-buttons absolute bottom-5  z-0 right-4">
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish current-slide"></button>
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
@@ -245,19 +245,34 @@
               been key drivers of his success, allowing him to stay ahead in an
               ever-evolving business landscape in Nigeria.
             </p>
-            <label class="text-xs text-kindablue my-4" for="">
-              More about the Speaker
-            </label>
+            <button class="text-xs expand border m-auto px-4 py-2 rounded-md border-blueish text-kindablue my-4" for="">
+              <span class="font-bold">Show/Hide </span>More about the Speaker
+            </button>
+            <div class="expanded hidden">
+            <p class="text-md font-light mt-4">
+                An avid follower of advancements in aviation and aerospace, Daniel’s deep understanding of the industry has enabled him to capitalize on emerging trends and foster ground-breaking ideas in manpower development across sectors in the Nigerian aviation space. His ventures in this sector have ranged from airline consultancy and marketing to aviation training, always with an eye for improving safety and efficiency. 
+              </p>
+              <p class="text-md font-light mt-4">
+                Education has also been a focal point for Daniel, as he recognizes its transformative power. By investing in educational initiatives, he has helped shape future generations and equip them with essential skills.
+              </p>
+              <p class="text-md font-light mt-4">
+                Daniel’s entrepreneurial prowess extends beyond these fields, as he has successfully ventured into manufacturing, food production and delivery, training, construction, and more. Whether it’s establishing efficient production processes, introducing innovative dining experiences, providing high-quality training programs, or undertaking complex construction projects, Daniel has consistently demonstrated an astute business acumen and an ability to thrive in challenging environments.
+
+              </p>
+              <p class="text-md font-light mt-4">
+                Recognizing the importance of sharing his knowledge and experiences, Daniel actively participates in various industry events and initiatives. One such notable contribution is his involvement in the Retirement where he imparts valuable insights on how to start a successful business before or after retirement. Through this platform, Daniel encourages and guides aspiring entrepreneurs to realize their dreams and create their own paths to financial independence. Make plans to participate in the forthcoming Retirement Revolution Class 2024.
+              </p>
+            </div>
           </div>
           <!-- picture and name -->
-          <div class="flex flex-col">
+          <div class="sm:relative flex flex-col h-1/6">
             <img
-              class="h-1/6 relative sm:h-[300px] sm:w-[250px] w-1/3 mb-8 sm:m-0 m-auto"
+              class="h-1/6 relative sm:h-[300px] sm:w-[250px] w-1/3 mb-0 sm:m-0 m-auto"
               src="assets/img/daniel-young.png"
               alt=""
             />
             <p
-              class="bg-kindablue font-bold text-xl text-nowrap sm:py-6 m-auto -translate-y-16 sm:w-[250px] text-white px-4 py-2 rounded-lg"
+              class="bg-kindablue -translate-y-10 sm:-translate-y-0 sm:absolute sm:bottom-0 m-auto font-bold text-xl sm:py-6 sm:w-[250px] text-white px-4 py-2 rounded-lg"
             >
               MR. DANIEL YOUNG
             </p>
@@ -279,13 +294,14 @@
               We have sessions conveniently schedules throughout the year so you
               can choose the seminar date and location that suits you best.
             </p>
-            <p class="my-4 text-kindablue">
-              View Locations and Scheduled dates
-            </p>
+            <button class="white-button expand2">
+              <span class="font-bold">View/Hide</span> Locations and Scheduled dates
+            </button>
           </div>
         </div>
-<!--         LOCATION TABLE
- -->        <div class="flex flex-col m-auto my-10 text-sm font-light">
+<!--    LOCATION TABLE   -->     
+            <div class="expanded2 hidden">
+                <div class="flex flex-col m-auto my-10 text-sm font-light">
             <div class="flex flex-row text-white py-3 rounded-md justify-between bg-kindablue px-6 w-2/3 m-auto">
                 <h4>
                     Location
@@ -314,7 +330,7 @@ March, 2024.
             </div>
             <div class="flex flex-row text-black py-3 my-3 rounded-md justify-between bg-sky px-6 w-2/3 m-auto">
                 <h4>
-                    Port-Hacourt
+                    Port-Harcourt
                 </h4>
                 <h4>
                     12th-13th
@@ -323,6 +339,8 @@ March, 2024.
             </div>
             
         </div>
+            </div>
+        
       </section>
 
       <div>
@@ -408,15 +426,16 @@ March, 2024.
         </div>
       </section>
 
-      <button>
-        <p class="text-md font-semibold text-right mr-40 text-kindablue">
-        View Course Outline
+      <button class="bg-gray-100 py-2 mr-6 rounded-md ml-auto w-2/5 expand3">
+        <p class="text-md text-center text-kindablue">
+        <span class="font-bold">View/Hide</span> Course Outline
       </p>
       </button>
 
         <!-- COURSE 1-8 DIV -->
-      <div class="course-outline dropdown m-auto flex flex-col">
-        <div class="flex max-w-[500px] md:max-w-5xl flex-col md:w-3/4 m-auto px-4 dropdown-content">
+        <div class="expanded3 hidden">
+             <div class="course-outline dropdown m-auto flex flex-col">
+        <div class="flex max-w-[500px] flex-col md:w-3/4 m-auto px-4 dropdown-content">
             <div class="m-auto mt-4">
                 <h3 class="bg-kindablue text-white font-semibold px-4 py-2 mx-4 rounded-md">01. INTRODUCTION TO ENTREPRENEURSHIP</h3>
                 <ol class="font-light text-md list-disc mt-4 mx-4">
@@ -512,6 +531,8 @@ March, 2024.
         </div>
 </div>
         </div>
+        </div>
+     
                 
 
       <div class="flex sm:flex-row flex-col px-16 my-24 m-auto justify-between">
