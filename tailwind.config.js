@@ -8,6 +8,7 @@ module.exports = {
           'blueish' : '#2282C6',
           'grayish' : '#515456',
           'kindagray' : '#252323',
+          'sky' : '#E7F1F8' ,
 
       },
       fontFamily: {
