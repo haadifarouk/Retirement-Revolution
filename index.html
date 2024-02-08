@@ -1,255 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./build/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./build/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
-<body class="font-sans">
+  </head>
+  <body class="font-sans">
     <div class="flex flex-col sm:max-w-5xl m-auto min-w-xl">
-        <!-- img and nav container -->
-        <header class="sticky top-0 z-10">
-            <section class="max-w-4xl mx-auto flex px-2 py-4 justify-between items-center">
-                <!-- logo -->
-                <a href="./HomeLPage-1.html">
-                    <img src="./assets/img/logo.png" alt="logo" class="h-14 w-10">
-                </a>
-                <!-- nav bar -->
-                <button id="hamburger-button" class="text-5xl text-blueish md:hidden cursor:pointer">
-                        &#9776;
-                </button>
-                <nav class="bg-white text-kindagray shadow-lg text-xs py-4 px-8 md:flex rounded-lg m-auto hidden space-x-4 sm:space-x-16">
-                    <a href="#main" class="current"><span class="">Home</span></a>
-                    <a href="#about">About the Speaker</a>
-                    <a href="#schedule">Schedule</a>
-                    <a href="#course" >Course Overview</a>
-                </nav>
-            </section>
-            <section id="mobile-menu" class="absolute top-0 bg-gray-300 text-grayish w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu">
-                <button id="close-button" class="text-8xl self-end px-6">
-                    &times;
-                </button>
-                 <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                    <a href="#main" class="w-full text-center py-6 hover:text-blueish">
-                        Home
-                    </a>
-                    <a href="#about" class="w-full text-center py-6 hover:text-blueish">
-                        About The Speaker
-                    </a>
-                    <a href="#schedule" class="w-full text-center py-6 hover:text-blueish">
-                        Schedule
-                    </a>
-                    <a href="#course" class="w-full text-center py-6 hover:text-blueish">
-                        Course Overview
-                    </a>
-                    <a class="w-full text-center py-6 hover:text-blueish" href="./countdown.html">
-                        Countdown Mode
-                    </a>
-                </nav>
-            </section>
-        </header>
+      <!-- img and nav container -->
+      <header class="sticky top-0 z-10">
+        <section
+          class="max-w-4xl mx-auto flex px-2 py-4 justify-between items-center"
+        >
+          <!-- logo -->
+          <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="logo" class="h-14 w-10" />
+          </a>
+          <!-- nav bar -->
+          <button
+            id="hamburger-button"
+            class="text-5xl text-blueish md:hidden cursor:pointer"
+          >
+            &#9776;
+          </button>
+          <nav
+            class="bg-white text-kindagray shadow-lg text-xs py-4 px-8 md:flex rounded-lg m-auto hidden space-x-4 sm:space-x-16"
+          >
+            <a href="#main" class="current"><span class="">Home</span></a>
+            <a href="#about">About the Speaker</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#course">Course Overview</a>
+          </nav>
+        </section>
+        <section
+          id="mobile-menu"
+          class="absolute top-0 bg-gray-300 text-grayish w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu"
+        >
+          <button id="close-button" class="text-8xl self-end px-6">
+            &times;
+          </button>
+          <nav
+            class="flex flex-col min-h-screen items-center py-8"
+            aria-label="mobile"
+          >
+            <a href="#main" class="w-full text-center py-6 hover:text-blueish">
+              Home
+            </a>
+            <a href="#about" class="w-full text-center py-6 hover:text-blueish">
+              About The Speaker
+            </a>
+            <a
+              href="#schedule"
+              class="w-full text-center py-6 hover:text-blueish"
+            >
+              Schedule
+            </a>
+            <a
+              href="#course"
+              class="w-full text-center py-6 hover:text-blueish"
+            >
+              Course Overview
+            </a>
+            <a
+              class="w-full text-center py-6 hover:text-blueish"
+              href="./countdown.html"
+            >
+              Countdown Mode
+            </a>
+          </nav>
+        </section>
+      </header>
 
-            <section id="main">
-                <div class="carousel">
-                    <!-- carousel 1 -->
-                <div class="mt-6 sm:h-[400px]  opacity-90 sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg " style=" background-repeat: no-repeat; background-image: url(assets/img/carousel1.png);">
+      <section id="main">
+        <!-- Main carousel container -->
+        <div class="carousel-container h-[400px]">
+          <ul class="carousel-items-list relative transition-transform">
+            <li class="carousel-slide absolute h-full w-full top-0 current-slide">
+              <!-- carousel 1 -->
+              <div
+                class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
+                style="
+                  background-image: url(assets/img/carousel1.png);
+                "
+              >
                 <div class="flex md:w-1/2 flex-col m-auto sm:m-0 text-white">
-                    <div class="flex flex-col min-w-2/8">
-                        <h2 class="sm:text-6xl text-3xl mt-6 font-semibold">RETIREMENT</h2>
-                    <h3 class="sm:text-4xl text-2xl font-semibold text-nowrap">REVOLUTION 
-                        <span class="text-kindablue font-extrabold">2024</span>
+                  <div class="flex flex-col min-w-2/8">
+                    <h2 class="sm:text-6xl text-3xl mt-6 font-semibold">
+                      RETIREMENT
+                    </h2>
+                    <h3 class="sm:text-4xl text-2xl font-semibold text-nowrap">
+                      REVOLUTION
+                      <span class="text-kindablue font-extrabold">2024</span>
                     </h3>
-                    </div>
-                    
-                    <p class="text-sm text-white mt-3 mr-20 font-light leading-5 line-clamp-5">
-                        Embark on a transformative journey towards a vibrant retirement. Join us for an action-packed seminar series designed to empower you with the knowledge and skills designed help you secure a prosperous future after retirement.
-                    </p>
-                    <a href="./registersingle.html">
-                        <button class="px-0 py-3  bg-kindablue text-lg font-bold my-3 w-3/6  min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md">
-                        Register
-                        <i class="fa-solid fa-arrow-right pl-2"></i>
-                    </button>
-                    </a>
-                    
-                    <div id="carousel-buttons">
-                        <span class="w-2 h-2 rounded-full bg-black mr-3">x</span>
-                        <span class="w-2 h-2 rounded-full mr-3">y</span>
-                        <span class="w-2 h-2 rounded-full mr-3">z</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-                <div class="carousel hidden">
-                    <!-- carousel 2 -->
-                <div class="mt-6 sm:h-[400px]  opacity-90 sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg " style=" background-repeat: no-repeat; background-image: url(assets/img/carousel2.png);">
-                <div class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 font-bold text-white">
-                    <h2 class="mt-6 font-semibold">RETIREMENT</h2>
-                    <h3 class="text-4xl font-semibold text-nowrap">REVOLUTION 
-                        <span class="text-kindablue font-extrabold">2024</span>
-                    </h3>
-                    <p class="text-sm text-white mt-3 mr-20 font-thin leading-5 line-clamp-5">
-                        Embark on a transformative journey towards a vibrant retirement. Join us for an action-packed seminar series designed to empower you with the knowledge and skills designed help you secure a prosperous future after retirement.
-                    </p>
-                    <button class="px-4 py-2 bg-kindablue text-lg font-bold my-3 w-2/5 text-center transition-colors hover:bg-blue-600 rounded-md">
-                        Register
-                        <i class="fa-solid fa-arrow-right pl-2"></i>
-                    </button>
-                    <div id="carousel-buttons">
-                        <span class="w-2 h-2 rounded-full mr-3">x</span>
-                        <span class="w-2 h-2 rounded-full bg-black mr-3">y</span>
-                        <span class="w-2 h-2 rounded-full  mr-3">z</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-                <div class="carousel hidden">
-                    <!-- carousel 3 -->
-                    <div class="mt-6 sm:h-[400px]  opacity-90 sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg " style=" background-repeat: no-repeat; background-size: cover; background-image: url(assets/img/carousel3.png);">
-                <div class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0  text-white">
-                    <h2 class="text-5xl mt-6 font-semibold">RETIREMENT</h2>
-                    <h3 class="text-4xl font-semibold text-nowrap">REVOLUTION 
-                        <span class="text-kindablue font-extrabold">2024</span>
-                    </h3>
-                    <p class="text-xs text-white mt-3 mr-20 font-thin leading-5 line-clamp-5">
-                        Embark on a transformative journey towards a vibrant retirement. Join us for an action-packed seminar series designed to empower you with the knowledge and skills designed help you secure a prosperous future after retirement.
-                    </p>
-                    <button class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-2/5 text-center transition-colors hover:bg-blue-600 rounded-md">
-                        Register
-                        <i class="fa-solid fa-arrow-right pl-2"></i>
-                    </button>
-                    <div id="carousel-buttons">
-                        <span class="w-2 h-2 rounded-full  mr-3">x</span>
-                        <span class="w-2 h-2 rounded-full mr-3">y</span>
-                        <span class="w-2 h-2 rounded-full bg-black mr-3">z</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </section>
-            
-            <div class="flex bg-[#DCEDF9] mt-4 py-8 max-w-full">
-                <div class="flex flex-row m-auto ">
-                    <p class="text-xs font-bold mx-4 relative translate-y-1/2">DELIVERED IN COLLABORATION WITH</p>
-                    <img src="assets/img/turtle-consulting.png" alt="Turtle Consulting" class="w-20 h-20">
-                </div>
-            </div>
+                  </div>
 
-            <!-- About section -->
-            <section id="about">
-                <div class="py-14 text-center text-kindablue font-bold text-xl">
-                    <h3 class="text-4xl font-bold">ABOUT THE SPEAKER</h3>
+                  <p
+                    class="text-sm text-white mt-3 mr-20 font-light leading-5 line-clamp-5"
+                  >
+                    Embark on a transformative journey towards a vibrant
+                    retirement. Join us for an action-packed seminar series
+                    designed to empower you with the knowledge and skills
+                    designed help you secure a prosperous future after
+                    retirement.
+                  </p>
+                  <a href="./registersingle.html">
+                    <button
+                      class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-3/6 min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md"
+                    >
+                      Register
+                      <i class="fa-solid fa-arrow-right pl-2"></i>
+                    </button>
+                  </a>
                 </div>
-                <div class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse">
-                    <div class="flex flex-col w-4/6 sm:w-1/2 px-4 m-auto sm:m-0">
-                        <p class="text-md font-light text-kindagray">
-                            <span class="font-semibold">Daniel Young</span> is a multi-faceted and dynamic serial entrepreneur with a diverse range of interests and a track record of success across various industries. With a passion for aviation and aerospace, education, manufacturing, food, training, construction, and numerous other sectors, Daniel’s entrepreneurial journey which began since 1985, has been marked by a constant pursuit of excellence and innovation.
-                            </p>
-                        <p class="text-md font-light mt-4">     
-                            With a natural inclination towards identifying opportunities and a bold determination to turn them into profitable ventures, Daniel has established himself as a seasoned businessman. His thirst for knowledge and his unwavering commitment to personal growth have been key drivers of his success, allowing him to stay ahead in an ever-evolving business landscape in Nigeria.
-                            </p>
-                        <label class="text-xs text-kindablue my-4" for="">
-                            More about the Speaker
-                        </label>
-                    </div>
-                    <!-- picture and name -->
-                    <div class="flex flex-col">
-                        <img class="h-1/6 relative sm:h-[300px] sm:w-[250px] w-1/3 mb-8 sm:m-0 m-auto" src="assets/img/daniel-young.png" alt="">
-                        <p class="bg-kindablue font-bold text-xl text-nowrap sm:py-6 m-auto -translate-y-16  sm:w-[250px] text-white px-4 py-2 rounded-lg">MR. DANIEL YOUNG</p>
-                    </div>
+              </div>
+            </li>
+            <li class="carousel-slide absolute h-full w-full top-0">
+              <!-- carousel 2 -->
+              <div
+                class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
+                style="
+                  background-image: url(assets/img/carousel2.png);
+                "
+              >
+                <div
+                  class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 font-bold text-white"
+                >
+                  <h2 class="mt-6 font-semibold">RETIREMENT</h2>
+                  <h3 class="text-4xl font-semibold text-nowrap">
+                    REVOLUTION
+                    <span class="text-kindablue font-extrabold">2024</span>
+                  </h3>
+                  <p
+                    class="text-sm text-white mt-3 mr-20 font-thin leading-5 line-clamp-5"
+                  >
+                    Embark on a transformative journey towards a vibrant
+                    retirement. Join us for an action-packed seminar series
+                    designed to empower you with the knowledge and skills
+                    designed help you secure a prosperous future after
+                    retirement.
+                  </p>
+                  <button
+                    class="px-4 py-2 bg-kindablue text-lg font-bold my-3 w-2/5 text-center transition-colors hover:bg-blue-600 rounded-md"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right pl-2"></i>
+                  </button>
                 </div>
-            </section>
-            
-            <!-- dates and location -->
+              </div>
+            </li>
+            <li class="carousel-slide absolute h-full w-full top-0 bottom-0">
+              <!-- carousel 3 -->
+              <div
+                class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
+                style="
+                  background-image: url(assets/img/carousel3.png);
+                "
+              >
+                <div
+                  class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 text-white"
+                >
+                  <h2 class="text-5xl mt-6 font-semibold">RETIREMENT</h2>
+                  <h3 class="text-4xl font-semibold text-nowrap">
+                    REVOLUTION
+                    <span class="text-kindablue font-extrabold">2024</span>
+                  </h3>
+                  <p
+                    class="text-xs text-white mt-3 mr-20 font-thin leading-5 line-clamp-5"
+                  >
+                    Embark on a transformative journey towards a vibrant
+                    retirement. Join us for an action-packed seminar series
+                    designed to empower you with the knowledge and skills
+                    designed help you secure a prosperous future after
+                    retirement.
+                  </p>
+                  <button
+                    class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-2/5 text-center transition-colors hover:bg-blue-600 rounded-md"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right pl-2"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Carousel Buttons -->
+          <div class="carousel-buttons absolute bottom-40 lg:bottom-20 z-0 left-[80%]">
+            <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish current-slide"></button>
+            <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
+            <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
+          </div>
+        </div>
+      </section>
 
-            <section id="schedule">
-                <div class="flex sm:flex-row flex-col py-24">
-                                <div class=" w-1/2 flex m-auto sm:m-0 sm:flex-col text-xl font-bold p-4 text-kindablue ">
-                                <h3 class="sm:text-wrap">DATES AND LOCATIONS</h3>
-                                </div>
-                                <div class="flex flex-col text-sm w-1/2 px-4 m-auto sm:m-0">
-                                    <p class="text-kindagray">
-                                        We have sessions conveniently schedules throughout the year so you can choose the seminar date and location that suits you best.
-                                    </p>
-                                    <p class="my-6 text-kindablue">
-                                        View Locations and Scheduled dates
-                                    </p>
-                                </div>
-                            </div>
-            </section>
-            
-            <div>
-                <h2 class="border-black px-4 font-bold sm:w-1/4 text-lg mx-6 block text-kindablue border-b-2">WHY JOIN US?</h2>
-                <div class="flex flex-col sm:flex-row text-sm mt-4 mb-10">
-                    <p class="  text-3xl font-bold text-gray-200 mr-4 text-center">01</p>
-                    <div class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto">
-                        <p class="text-kindablue text-lg mt-2">Supporting Career Transition</p>
-                    <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md  px-4">
-                        Retirement often marks a significant career transition for civil servants who are used to the stability and structure provided by their government positions. This RETIREMENT REVOLUTION TRAINING can provide essential guidance and support to civil servants who are considering starting their own business. It can help them navigate the challenges and uncertainties of entrepreneurship and make a successful transition to their new career path.
-                    </p>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
-                    <p class="  text-3xl font-bold text-gray-200 mr-4 text-center">02</p>
-                    <div class="flex flex-col text-sm sm:flex-row justify-between text-center sm:text-left m-auto">
-                        <p class="text-kindablue text-lg mt-2">Utilizing Knowledge and Experience</p>
-                    <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md  px-4">
-                        Most retiring civil servants possess valuable knowledge and experience gained through their government roles. RETIREMENT REVOLUTION TRAINING will help them leverage these skills to start and run their own businesses effectively. By providing specialized training in areas like business planning, marketing, financial management, and legal considerations, civil servants can optimize their expertise and increase their chances of entrepreneurial success.
-                    </p>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
-                    <p class="   text-3xl font-bold text-gray-200 mr-4 text-center">03</p>
-                    <div class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto">
-                        <p class="text-kindablue text-lg mt-2">Enhanced Retirement Income</p>
-                    <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md  px-4">
-                        For civil servants concerned about their financial security in retirement, starting a business can provide an additional source of income. Retirement training can guide civil servants in developing profitable business models and understanding the financial aspects of entrepreneurship. By supporting the creation of successful businesses, retirement training can contribute to the financial well-being and stability of retired civil servants.
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <section id="course">
-                <div class="flex flex-col text-center w-2/3 m-auto my-10">
-                                
-                                <h2 class="text-2xl text-kindablue font-bold">COURSE OUTLINE</h2>
-                                <p class="text-md font-light mt-6">
-                                    This RETIREMENT REVOLUTION TRAINING Course is designed to equip individuals entering retirement with the knowledge and skills necessary to start and run a successful business. Participants will learn various aspects of business planning, budgeting, marketing, legal requirements, and more. By the end of the course, participants will be confident in starting their own businesses and utilizing their skills and experience effectively in the new venture.
-                                </p>
-                                <p class="text-md mt-8 font-semibold text-kindablue">COURSE DURATION: <span class="text-black">2 Days(16 Sessions)</span>
-                                </p>
-                            </div>
-                </section>
-            
-            <p class="text-md font-semibold text-right mr-40 text-kindablue">View Course Outline
+      <div class="flex bg-[#DCEDF9] mt-20 py-8 max-w-full">
+        <div class="flex flex-row m-auto">
+          <p class="text-xs font-bold mx-4 relative translate-y-1/2">
+            DELIVERED IN COLLABORATION WITH
+          </p>
+          <img
+            src="assets/img/turtle-consulting.png"
+            alt="Turtle Consulting"
+            class="w-20 h-20"
+          />
+        </div>
+      </div>
+
+      <!-- About section -->
+      <section id="about">
+        <div class="py-14 text-center text-kindablue font-bold text-xl">
+          <h3 class="text-4xl font-bold">ABOUT THE SPEAKER</h3>
+        </div>
+        <div
+          class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse"
+        >
+          <div class="flex flex-col w-4/6 sm:w-1/2 px-4 m-auto sm:m-0">
+            <p class="text-md font-light text-kindagray">
+              <span class="font-semibold">Daniel Young</span> is a multi-faceted
+              and dynamic serial entrepreneur with a diverse range of interests
+              and a track record of success across various industries. With a
+              passion for aviation and aerospace, education, manufacturing,
+              food, training, construction, and numerous other sectors, Daniel’s
+              entrepreneurial journey which began since 1985, has been marked by
+              a constant pursuit of excellence and innovation.
             </p>
-            <div class="flex sm:flex-row flex-col px-16 my-24 m-auto justify-between">
-                <div class="flex mb-5 flex-col md:w-2/6 w-3/6 py-8 m-auto">
-                    <br>
-                    <br>
-                    <h3 class="text-2xl font-bold text-kindablue ">CONTACT US</h3>
-                    <p class="text-xs font-light text-black">
-                        Feel free to contact us at any time. We will get back to you as soon as possible.
-                    </p>
-                </div>
-                <div class="flex flex-col text-xs text-gray-400 m-auto">
-                    <a href="mailto:info@rr24fakeemail.com">info@rr24fakeemail.com</a>
-                    <a class="mt-4" href="tel:+234 0000 000 0000">+234 0000 000 0000</a>
-                </div>
-            </div>
-            <footer class="bg-kindablue pt-12 pb-10">
-                <div class="flex flex-row text-white text-xs mt-4 justify-center">
-                    <p class="mr-4">CONNECT WITH US</p>
-                    <i class="fa-brands fa-facebook mr-4"></i>
-                    <i class="fa-brands fa-x-twitter mr-4"></i>
-                    <i class="fa-brands fa-youtube mr-4"></i>
-                </div>
-            </footer>
-            <script src="https://kit.fontawesome.com/fbce1fd5a0.js" crossorigin="anonymous">
-            </script>
-            <script src="assets/js/togglemenu.js">
+            <p class="text-md font-light mt-4">
+              With a natural inclination towards identifying opportunities and a
+              bold determination to turn them into profitable ventures, Daniel
+              has established himself as a seasoned businessman. His thirst for
+              knowledge and his unwavering commitment to personal growth have
+              been key drivers of his success, allowing him to stay ahead in an
+              ever-evolving business landscape in Nigeria.
+            </p>
+            <label class="text-xs text-kindablue my-4" for="">
+              More about the Speaker
+            </label>
+          </div>
+          <!-- picture and name -->
+          <div class="flex flex-col">
+            <img
+              class="h-1/6 relative sm:h-[300px] sm:w-[250px] w-1/3 mb-8 sm:m-0 m-auto"
+              src="assets/img/daniel-young.png"
+              alt=""
+            />
+            <p
+              class="bg-kindablue font-bold text-xl text-nowrap sm:py-6 m-auto -translate-y-16 sm:w-[250px] text-white px-4 py-2 rounded-lg"
+            >
+              MR. DANIEL YOUNG
+            </p>
+          </div>
+        </div>
+      </section>
 
-            </script>
+      <!-- dates and location -->
+
+      <section id="schedule">
+        <div class="flex sm:flex-row flex-col py-24">
+          <div
+            class="w-1/2 flex m-auto sm:m-0 sm:flex-col text-xl font-bold p-4 text-kindablue"
+          >
+            <h3 class="sm:text-wrap">DATES AND LOCATIONS</h3>
+          </div>
+          <div class="flex flex-col text-sm w-1/2 px-4 m-auto sm:m-0">
+            <p class="text-kindagray">
+              We have sessions conveniently schedules throughout the year so you
+              can choose the seminar date and location that suits you best.
+            </p>
+            <p class="my-6 text-kindablue">
+              View Locations and Scheduled dates
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <h2
+          class="border-black px-4 font-bold sm:w-1/4 text-lg mx-6 block text-kindablue border-b-2"
+        >
+          WHY JOIN US?
+        </h2>
+        <div class="flex flex-col sm:flex-row text-sm mt-4 mb-10">
+          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">01</p>
+          <div
+            class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto"
+          >
+            <p class="text-kindablue text-lg mt-2">
+              Supporting Career Transition
+            </p>
+            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
+              Retirement often marks a significant career transition for civil
+              servants who are used to the stability and structure provided by
+              their government positions. This RETIREMENT REVOLUTION TRAINING
+              can provide essential guidance and support to civil servants who
+              are considering starting their own business. It can help them
+              navigate the challenges and uncertainties of entrepreneurship and
+              make a successful transition to their new career path.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
+          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">02</p>
+          <div
+            class="flex flex-col text-sm sm:flex-row justify-between text-center sm:text-left m-auto"
+          >
+            <p class="text-kindablue text-lg mt-2">
+              Utilizing Knowledge and Experience
+            </p>
+            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
+              Most retiring civil servants possess valuable knowledge and
+              experience gained through their government roles. RETIREMENT
+              REVOLUTION TRAINING will help them leverage these skills to start
+              and run their own businesses effectively. By providing specialized
+              training in areas like business planning, marketing, financial
+              management, and legal considerations, civil servants can optimize
+              their expertise and increase their chances of entrepreneurial
+              success.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
+          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">03</p>
+          <div
+            class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto"
+          >
+            <p class="text-kindablue text-lg mt-2">
+              Enhanced Retirement Income
+            </p>
+            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
+              For civil servants concerned about their financial security in
+              retirement, starting a business can provide an additional source
+              of income. Retirement training can guide civil servants in
+              developing profitable business models and understanding the
+              financial aspects of entrepreneurship. By supporting the creation
+              of successful businesses, retirement training can contribute to
+              the financial well-being and stability of retired civil servants.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section id="course">
+        <div class="flex flex-col text-center w-2/3 m-auto my-10">
+          <h2 class="text-2xl text-kindablue font-bold">COURSE OUTLINE</h2>
+          <p class="text-md font-light mt-6">
+            This RETIREMENT REVOLUTION TRAINING Course is designed to equip
+            individuals entering retirement with the knowledge and skills
+            necessary to start and run a successful business. Participants will
+            learn various aspects of business planning, budgeting, marketing,
+            legal requirements, and more. By the end of the course, participants
+            will be confident in starting their own businesses and utilizing
+            their skills and experience effectively in the new venture.
+          </p>
+          <p class="text-md mt-8 font-semibold text-kindablue">
+            COURSE DURATION: <span class="text-black">2 Days(16 Sessions)</span>
+          </p>
+        </div>
+      </section>
+
+      <p class="text-md font-semibold text-right mr-40 text-kindablue">
+        View Course Outline
+      </p>
+      <div class="flex sm:flex-row flex-col px-16 my-24 m-auto justify-between">
+        <div class="flex mb-5 flex-col md:w-2/6 w-3/6 py-8 m-auto">
+          <br />
+          <br />
+          <h3 class="text-2xl font-bold text-kindablue">CONTACT US</h3>
+          <p class="text-xs font-light text-black">
+            Feel free to contact us at any time. We will get back to you as soon
+            as possible.
+          </p>
+        </div>
+        <div class="flex flex-col text-xs text-gray-400 m-auto">
+          <a href="mailto:info@rr24fakeemail.com">info@rr24fakeemail.com</a>
+          <a class="mt-4" href="tel:+234 0000 000 0000">+234 0000 000 0000</a>
+        </div>
+      </div>
+      <footer class="bg-kindablue pt-12 pb-10">
+        <div class="flex flex-row text-white text-xs mt-4 justify-center">
+          <p class="mr-4">CONNECT WITH US</p>
+          <i class="fa-brands fa-facebook mr-4"></i>
+          <i class="fa-brands fa-x-twitter mr-4"></i>
+          <i class="fa-brands fa-youtube mr-4"></i>
+        </div>
+      </footer>
+      <script
+        src="https://kit.fontawesome.com/fbce1fd5a0.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="assets/js/togglemenu.js"></script>
+      <script src="assets/js/carousel.js"></script>
     </div>
-</body>
+  </body>
 </html>
