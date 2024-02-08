@@ -104,3 +104,12 @@ nav a.current{
 .white-button{
     @apply my-4 text-kindablue border m-auto px-4 py-2 border-blueish rounded-md
 }
+
+
+.table-col{
+    @apply flex m-auto  flex-row text-white py-3 rounded-md justify-between bg-kindablue px-6 w-2/3
+}
+.table-col2{
+    @apply flex flex-row text-black py-3 rounded-md justify-between bg-sky px-6 w-2/3 m-auto mt-2
+}
+
