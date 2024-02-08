@@ -72,4 +72,4 @@ buttonsContainer.addEventListener("click", (e) => {
   updateButtons(currentButton, targetButton);
 });
 
-let intervalID = setInterval(moveSlidesRight, 4000);
+let intervalID = setInterval(moveSlidesRight, 6000);
