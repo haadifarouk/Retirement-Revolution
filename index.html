@@ -40,7 +40,7 @@
         </section>
         <section
           id="mobile-menu"
-          class="absolute top-0 bg-gray-300 text-grayish w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu"
+          class="absolute top-0 bg-gray-300 text-grayish w-full text-4xl hidden flex-col justify-center origin-top transition-all ease-in-out"
         >
           <button id="close-button" class="text-8xl self-end px-6">
             &times;
@@ -79,7 +79,7 @@
 
       <section id="main">
         <!-- Main carousel container -->
-        <div class="carousel-container h-[400px]">
+        <div class="overflow-hidden relative carousel-container h-[400px]">
           <ul class="carousel-items-list relative transition-transform">
             <li class="carousel-slide absolute h-full w-full top-0 current-slide">
               <!-- carousel 1 -->
@@ -128,32 +128,34 @@
                   background-image: url(assets/img/carousel2.png);
                 "
               >
-                <div
-                  class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 font-bold text-white"
-                >
-                  <h2 class="mt-6 font-semibold">RETIREMENT</h2>
-                  <h3 class="text-4xl font-semibold text-nowrap">
+              <div class="flex md:w-1/2 flex-col m-auto sm:m-0 text-white">
+                <div class="flex flex-col min-w-2/8">
+                  <h2 class="sm:text-6xl text-3xl mt-6 font-semibold">
+                    RETIREMENT
+                  </h2>
+                  <h3 class="sm:text-4xl text-2xl font-semibold text-nowrap">
                     REVOLUTION
                     <span class="text-kindablue font-extrabold">2024</span>
                   </h3>
-                  <p
-                    class="text-sm text-white mt-3 mr-20 font-thin leading-5 line-clamp-5"
-                  >
-                    Embark on a transformative journey towards a vibrant
-                    retirement. Join us for an action-packed seminar series
-                    designed to empower you with the knowledge and skills
-                    designed help you secure a prosperous future after
-                    retirement.
-                  </p>
-                  <a href="./registersingle.html">
-                    <button
-                      class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-3/6 min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md"
-                    >
-                      Register
-                      <i class="fa-solid fa-arrow-right pl-2"></i>
-                    </button>
-                  </a>
                 </div>
+
+                <p
+                  class="text-sm text-white mt-3 mr-20 font-light leading-5 line-clamp-5"
+                >
+                  Embark on a transformative journey towards a vibrant
+                  retirement. Join us for an action-packed seminar series
+                  designed to empower you with the knowledge and skills
+                  designed help you secure a prosperous future after
+                  retirement.
+                </p>
+                <a href="./registersingle.html">
+                  <button
+                    class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-3/6 min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right pl-2"></i>
+                  </button>
+                </a>
               </div>
             </li>
             <li class="carousel-slide absolute h-full w-full top-0 bottom-0">
@@ -164,37 +166,39 @@
                   background-image: url(assets/img/carousel3.png);
                 "
               >
-                <div
-                  class="flex w-2/3 flex-col sm:w-1/2 m-auto sm:m-0 text-white"
-                >
-                  <h2 class="text-5xl mt-6 font-semibold">RETIREMENT</h2>
-                  <h3 class="text-4xl font-semibold text-nowrap">
+              <div class="flex md:w-1/2 flex-col m-auto sm:m-0 text-white">
+                <div class="flex flex-col min-w-2/8">
+                  <h2 class="sm:text-6xl text-3xl mt-6 font-semibold">
+                    RETIREMENT
+                  </h2>
+                  <h3 class="sm:text-4xl text-2xl font-semibold text-nowrap">
                     REVOLUTION
                     <span class="text-kindablue font-extrabold">2024</span>
                   </h3>
-                  <p
-                    class="text-xs text-white mt-3 mr-20 font-thin leading-5 line-clamp-5"
-                  >
-                    Embark on a transformative journey towards a vibrant
-                    retirement. Join us for an action-packed seminar series
-                    designed to empower you with the knowledge and skills
-                    designed help you secure a prosperous future after
-                    retirement.
-                  </p>
-                  <a href="./registersingle.html">
-                    <button
-                      class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-3/6 min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md"
-                    >
-                      Register
-                      <i class="fa-solid fa-arrow-right pl-2"></i>
-                    </button>
-                  </a>
                 </div>
+
+                <p
+                  class="text-sm text-white mt-3 mr-20 font-light leading-5 line-clamp-5"
+                >
+                  Embark on a transformative journey towards a vibrant
+                  retirement. Join us for an action-packed seminar series
+                  designed to empower you with the knowledge and skills
+                  designed help you secure a prosperous future after
+                  retirement.
+                </p>
+                <a href="./registersingle.html">
+                  <button
+                    class="px-0 py-3 bg-kindablue text-lg font-bold my-3 w-3/6 min-w-1/5 text-center transition-colors hover:bg-white hover:text-kindablue rounded-md"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right pl-2"></i>
+                  </button>
+                </a>
               </div>
             </li>
           </ul>
           <!-- Carousel Buttons -->
-          <div class="carousel-buttons absolute bottom-40 lg:bottom-20 z-0 left-[80%]">
+          <div class="carousel-buttons absolute bottom-0  z-0 right-0">
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish current-slide"></button>
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
@@ -371,8 +375,8 @@
       </p>
       </button>
 
-      <div class="course-outline m-auto flex flex-col  md:w-3/5 px-10">
-        <div class="flex flex-col m-auto">
+      <div class="course-outline dropdown m-auto flex flex-col  md:w-3/5 px-10">
+        <div class="flex flex-col m-auto dropdown-content">
             <div class="m-auto mt-4">
                 <h3 class="bg-kindablue text-white font-semibold px-4 py-2 mx-4 rounded-md">01. INTRODUCTION TO ENTREPRENEURSHIP</h3>
                 <ol class="font-light text-md list-disc mt-4 mx-4">
