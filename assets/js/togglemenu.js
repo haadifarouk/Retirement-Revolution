@@ -15,7 +15,7 @@ const initApp = () =>{
 document.addEventListener('DOMContentLoaded', initApp);
 
 
-
+    /* EXPAND BUTTON 1 */
     const expandButton = document.querySelector('.expand');
     const expandToggle =()=>{
     const expandedContent = document.querySelector('.expanded');
