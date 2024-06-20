@@ -35,8 +35,8 @@
           >
             <a href="#main" class="hover:text-blueish hover:shadow-sm transition-all ease-in-out"><span class="">Home</span></a>
             <a href="#about" class="hover:text-blueish hover:shadow-sm transition-all ease-in-out">About the Speaker</a>
+            <a href="#schedule" class="hover:text-blueish hover:shadow-sm transition-all ease-in-out">Schedule</a>
             <a href="#course" class="hover:text-blueish hover:shadow-sm transition-all ease-in-out">Course Overview</a>
-            <a href="#benefits" class="hover:text-blueish hover:shadow-sm transition-all ease-in-out">Benefits</a>
           </nav>
         </section>
         <section
@@ -58,37 +58,37 @@
             </a>
             
             <a
+              href="#schedule"
+              class="w-full text-center py-6 hover:text-blueish"
+            >
+             Schedule
+            </a>
+            <a
               href="#course"
               class="w-full text-center py-6 hover:text-blueish"
             >
               Course Overview
             </a>
-            <a
-              href="#benefits"
-              class="w-full text-center py-6 hover:text-blueish"
-            >
-              Benefits
-            </a>
-            <a
+            <!-- <a
               class="w-full text-center py-6 hover:text-blueish"
               href="./countdown.html"
             >
               Countdown Mode
-            </a>
+            </a> -->
           </nav>
         </section>
       </header>
 
       <section id="main">
         <!-- Main carousel container -->
-        <div class="sm:overflow-hidden relative carousel-container h-[400px]">
+        <div class="overflow-hidden relative carousel-container h-[400px]">
           <ul class="carousel-items-list relative transition-transform">
             <li class="carousel-slide absolute h-full w-full top-0 current-slide">
               <!-- carousel 1 -->
               <div
                 class="mt-6 sm:h-[400px] md:bg-center sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
                 style="
-                  background-image: url(assets/img/carousel1.png);
+                  background-image: url(assets/img/Retirement-picture-1.png);
                 "
               >
                 <div class="flex md:w-1/2 flex-col m-auto sm:m-0 text-white">
@@ -127,7 +127,7 @@
               <div
                 class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
                 style="
-                  background-image: url(assets/img/carousel2.png);
+                  background-image: url(assets/img/Retirement-picture-2.png);
                 "
               >
               <div class="flex md:w-1/2 flex-col m-auto sm:m-0 text-white">
@@ -160,8 +160,8 @@
                 </a>
               </div>
             </li>
-            <li class="carousel-slide absolute h-full w-full top-0 bottom-0">
-              <!-- carousel 3 -->
+            <!-- <li class="carousel-slide absolute h-full w-full top-0 bottom-0">
+               carousel 3
               <div
                 class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
                 style="
@@ -197,18 +197,18 @@
                   </button>
                 </a>
               </div>
-            </li>
+            </li> -->
           </ul>
           <!-- Carousel Buttons -->
           <div class="carousel-buttons absolute bottom-5  z-0 right-4">
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish current-slide"></button>
             <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
-            <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button>
+            <!-- <button class="carousel-button w-2 h-2 rounded-full mr-2 bg-grayish"></button> -->
           </div>
         </div>
       </section>
 
-      <div class="flex bg-[#DCEDF9] mt-20 py-8 max-w-full">
+      <!-- <div class="flex bg-[#DCEDF9] mt-20 py-8 max-w-full">
         <div class="flex flex-row m-auto">
           <p class="text-xs font-bold mx-4 relative translate-y-1/2">
             DELIVERED IN COLLABORATION WITH
@@ -219,7 +219,7 @@
             class="w-20 h-20"
           />
         </div>
-      </div>
+      </div> -->
 
       <!-- About section -->
       <section id="about">
@@ -284,7 +284,9 @@
 
       
 
+      <section id="schedule">
 
+      
         <!-- EVENT DETAILS -->
       <div>
 
@@ -292,7 +294,7 @@
           EVENT DETAILS
         </h2>
 
-        <div class="grid gap-2 text-center grid-cols-3 m-auto w-2/3 mt-6 mb-14">
+        <div class="md:grid gap-2 text-center grid-cols-3 m-auto w-2/3 mt-6 mb-14 hidden">
             <div class="text-xs text-left">
               We have a 3-day insight- packed programme lined up, that you cannot afford to miss.
             </div>
@@ -301,14 +303,14 @@
                 <div class="text-sm bg-blueish rounded-md text-white py-4 min-w-2/3">Fee</div>
 
                 <div class="text-sm text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
-                  ₦ 75 000
+                  ₦ 75,000
                 </div>
 
                  <div></div>
 
                 <div class="text-sm bg-blueish rounded-md text-white py-3.5 min-w-2/3">Dates</div>
 
-               <div class="text-xs text-left px-2 bg-sky rounded-md text-black py-2 min-w-2/3">
+               <div class="text-xs text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
                   26th, 27th and 28th
                   July 2024.
                 </div>
@@ -324,9 +326,37 @@
                 </div>
             </div>
 
+            
+            <div class="text-xs md:hidden mx-4 text-center">
+              We have a 3-day insight- packed programme lined up, that you cannot afford to miss.
+            </div>
+
+            <div class="grid gap-2 text-center grid-cols-2 m-auto w-3/4 mt-6 mb-14 md:hidden">
+                  <div class="text-sm bg-blueish rounded-md text-white py-4 min-w-2/3">Fee</div>
+  
+                  <div class="text-sm text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
+                    ₦ 75,000
+                  </div>
+                  <div class="text-sm bg-blueish rounded-md text-white py-3.5 min-w-2/3">Dates</div>
+  
+                 <div class="text-xs text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
+                    26th, 27th and 28th
+                    July 2024.
+                  </div>
+
+                  <div class="text-sm bg-blueish rounded-md text-white py-6 min-w-2/3">Location</div>
+  
+                  <div class="text-xs px-2 text-left bg-sky rounded-md text-black py-4 min-w-2/3">
+                    Turtle Consulting Centre,
+                    No. 8 Streamwood Estate,
+                    Airport Road, Abuja.
+                  </div>
+              </div>
+
         </div>
 
       </div>
+    </section>
 
       <section id="course" class="max-w-5xl m-auto">
         <div class="flex flex-col text-center px-6 md:w-2/3 m-auto my-10">
@@ -344,7 +374,7 @@
         <!-- COURSE 1-8 DIV -->
         <div class="">
              <div class="course-outline dropdown m-auto flex flex-col">
-        <div class="flex max-w-[500px] flex-col md:w-3/4 m-auto px-4 dropdown-content">
+        <div class=" max-w-6xl flex-col m-auto px-4">
             <div class="m-auto mt-4">
                 <h3 class="bg-kindablue text-white font-semibold px-4 py-2 mx-4 rounded-md">01. INTRODUCTION TO ENTREPRENEURSHIP</h3>
                 <ol class="font-light text-md list-disc mt-4 mx-4">
