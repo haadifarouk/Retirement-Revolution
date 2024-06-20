@@ -12,20 +12,20 @@
     <title>Home</title>
   </head>
   <body class="font-sans">
-    <div class="flex flex-col sm:max-w-5xl m-auto min-w-xl">
+    <div class="flex flex-col sm:max-w-6xl m-auto min-w-xl">
       <!-- img and nav container -->
       <header class="sticky top-0 z-10">
         <section
-          class="max-w-4xl m-auto flex px-4 mx-2 py-2 justify-between md:bg-transparent bg-white z-10 shadow-lg md:shadow-sm rounded-md items-center"
+          class="max-w-7xl m-auto flex px-4 mx-2 py-2 justify-between md:bg-white bg-white z-10 shadow-lg md:shadow-sm rounded-md items-center"
         >
           <!-- logo -->
           <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="logo" class="h-14 w-10" />
+            <img src="./assets/img/new-logo.svg" alt="logo" class="h-15 w-2/4" />
           </a>
           <!-- nav bar -->
           <button
             id="hamburger-button"
-            class="text-5xl text-blueish md:hidden cursor:pointer"
+            class="text-4xl text-blueish md:hidden cursor:pointer"
           >
             &#9776;
           </button>
@@ -41,9 +41,9 @@
         </section>
         <section
           id="mobile-menu"
-          class="absolute top-0 bg-gray-300 text-grayish w-full text-4xl hidden flex-col justify-center origin-top transition-all ease-in-out"
+          class="absolute top-0 bg-gray-300 text-grayish w-full text-3xl hidden flex-col justify-center origin-top transition-all ease-in-out"
         >
-          <button id="close-button" class="text-8xl self-end px-6">
+          <button id="close-button" class="text-5xl self-end mt-3 px-6">
             &times;
           </button>
           <nav
@@ -85,7 +85,7 @@
             <li class="carousel-slide absolute h-full w-full top-0 current-slide">
               <!-- carousel 1 -->
               <div
-                class="mt-6 sm:h-[400px] sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
+                class="mt-6 sm:h-[400px] md:bg-center sm:pb-10 mx-4 rounded-lg flex-col sm:flex-row-reverse flex py-10 px-8 shadow-lg bg-cover bg-no-repeat"
                 style="
                   background-image: url(assets/img/carousel1.png);
                 "
@@ -281,160 +281,67 @@
         </div>
       </section>
 
-      <!-- dates and location -->
+      
 
-      <section id="schedule">
-        <div class="flex sm:flex-row flex-col py-12">
-          <div
-            class="md:w-1/2 flex m-auto sm:m-0 sm:flex-col text-xl font-bold p-4 text-kindablue"
-          >
-            <h3 class="sm:text-wrap w-full">DATES AND LOCATIONS</h3>
-          </div>
-          <div class="flex flex-col text-sm md:w-1/2 px-4 m-auto sm:m-0">
-            <p class="text-kindagray">
-              We have sessions conveniently schedules throughout the year so you
-              can choose the seminar date and location that suits you best.
-            </p>
-            <button class="white-button expand2">
-              <span class="font-bold">View/Hide</span> Locations and Scheduled dates
-            </button>
-          </div>
-        </div>
-<!--    LOCATION TABLE   -->     
-            <div class="expanded2 hidden">
-                <div class="flex sm:max-w-1/2 flex-col shrink-0 w-3xl sm:m-auto mb-10 text-xs md:text-sm font-light">
-            <div class="table-col">
-                <h4>
-                    Location
-                </h4>
-                <h4>
-                    Dates
-                </h4>
-            </div>
-            <div class="table-col2">
-                <h4>
-                    Lagos
-                </h4>
-                <h4>
-                    26th-27th
-                        Feb, 2024.
-                </h4>
-            </div>
-            <div class="table-col2">
-                <h4>
-                    Abuja
-                </h4>
-                <h4>
-                    5th-6th
-March, 2024.
-                </h4>
-            </div>
-            <div class="table-col2">
-                <h4>
-                    Port-Harcourt
-                </h4>
-                <h4>
-                    12th-13th
-                    March, 2024.
-                </h4>
-            </div>
-            
-        </div>
-            </div>
-        
-      </section>
 
+        <!-- EVENT DETAILS -->
       <div>
-        <h2
-          class="border-black px-4 font-bold sm:w-1/4 text-lg mx-6 my-6 block text-kindablue border-b-2"
-        >
-          WHY JOIN US?
+        
+        <h2 class="px-4 font-bold text-2xl mx-6 py-10 block text-kindablue text-center">
+          EVENT DETAILS
         </h2>
-        <div class="flex flex-col sm:flex-row text-sm mt-4 mb-10">
-          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">01</p>
-          <div
-            class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto"
-          >
-            <p class="text-kindablue text-lg mt-2">
-              Supporting Career Transition
-            </p>
-            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
-              Retirement often marks a significant career transition for civil
-              servants who are used to the stability and structure provided by
-              their government positions. This RETIREMENT REVOLUTION TRAINING
-              can provide essential guidance and support to civil servants who
-              are considering starting their own business. It can help them
-              navigate the challenges and uncertainties of entrepreneurship and
-              make a successful transition to their new career path.
-            </p>
-          </div>
+
+        <div class="grid gap-2 text-center grid-cols-3 m-auto w-2/3 mt-6 mb-14">
+            <div class="text-xs text-left">
+              We have a 3-day insight- packed programme lined up, that you cannot afford to miss.
+            </div>
+
+          
+                <div class="text-sm bg-blueish rounded-md text-white py-4 min-w-2/3">Fee</div>
+
+                <div class="text-sm text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
+                  ₦ 75 000
+                </div>
+
+                 <div></div>
+
+                <div class="text-sm bg-blueish rounded-md text-white py-3.5 min-w-2/3">Dates</div>
+
+               <div class="text-xs text-left px-2 bg-sky rounded-md text-black py-2 min-w-2/3">
+                  26th, 27th and 28th
+                  July 2024.
+                </div>
+
+                  <div></div>
+
+                <div class="text-sm bg-blueish rounded-md text-white py-6 min-w-2/3">Location</div>
+
+                <div class="text-xs px-2 text-left bg-sky rounded-md text-black py-4 min-w-2/3">
+                  Turtle Consulting Centre,
+                  No. 8 Streamwood Estate,
+                  Airport Road, Abuja.
+                </div>
+            </div>
+
         </div>
-        <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
-          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">02</p>
-          <div
-            class="flex flex-col text-sm sm:flex-row justify-between text-center sm:text-left m-auto"
-          >
-            <p class="text-kindablue text-lg mt-2">
-              Utilizing Knowledge and Experience
-            </p>
-            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
-              Most retiring civil servants possess valuable knowledge and
-              experience gained through their government roles. RETIREMENT
-              REVOLUTION TRAINING will help them leverage these skills to start
-              and run their own businesses effectively. By providing specialized
-              training in areas like business planning, marketing, financial
-              management, and legal considerations, civil servants can optimize
-              their expertise and increase their chances of entrepreneurial
-              success.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row text-xs mt-4 mb-10">
-          <p class="text-3xl font-bold text-gray-200 mr-4 text-center">03</p>
-          <div
-            class="flex text-sm flex-col sm:flex-row justify-between text-center sm:text-left m-auto"
-          >
-            <p class="text-kindablue text-lg mt-2">
-              Enhanced Retirement Income
-            </p>
-            <p class="sm:w-1/2 mx-6 sm:mx-0 font-light text-md px-4">
-              For civil servants concerned about their financial security in
-              retirement, starting a business can provide an additional source
-              of income. Retirement training can guide civil servants in
-              developing profitable business models and understanding the
-              financial aspects of entrepreneurship. By supporting the creation
-              of successful businesses, retirement training can contribute to
-              the financial well-being and stability of retired civil servants.
-            </p>
-          </div>
-        </div>
+
       </div>
-      <section id="course">
+
+      <section id="course" class="max-w-5xl m-auto">
         <div class="flex flex-col text-center px-6 md:w-2/3 m-auto my-10">
           <h2 class="text-2xl text-kindablue font-bold">COURSE OUTLINE</h2>
           <p class="text-md font-light mt-6">
-            This RETIREMENT REVOLUTION TRAINING Course is designed to equip
-            individuals entering retirement with the knowledge and skills
-            necessary to start and run a successful business. Participants will
-            learn various aspects of business planning, budgeting, marketing,
-            legal requirements, and more. By the end of the course, participants
-            will be confident in starting their own businesses and utilizing
-            their skills and experience effectively in the new venture.
+            This RETIRE SMART, RETIRE RICH Course is designed to equip individuals entering retirement with the knowledge and skills necessary to start and run a successful business. Participants will learn various aspects of business planning, budgeting, marketing, legal requirements, and more. By the end of the course, participants will be confident in starting their own businesses and utilizing their skills and experience effectively in the new venture.
           </p>
           <p class="text-md mt-8 font-semibold text-kindablue">
-            COURSE DURATION: <span class="text-black">2 Days(16 Sessions)</span>
+            COURSE DURATION: <span class="text-black">3 Days</span>
           </p>
         </div>
       </section>
 
-      <button class="text-kindablue border py-2 mr-6 border-blueish rounded-md ml-auto w-2/5 expand3 ">
-        <p class="text-md text-center text-kindablue">
-        <span class="font-bold">View/Hide</span> Course Outline
-      </p>
-      </button>
 
         <!-- COURSE 1-8 DIV -->
-        <div class="expanded3 hidden">
+        <div class="">
              <div class="course-outline dropdown m-auto flex flex-col">
         <div class="flex max-w-[500px] flex-col md:w-3/4 m-auto px-4 dropdown-content">
             <div class="m-auto mt-4">
@@ -442,6 +349,7 @@ March, 2024.
                 <ol class="font-light text-md list-disc mt-4 mx-4">
                     <li>Understanding the mindset and traits of successful entrepreneurs</li>
                     <li>Identifying business opportunities in retirement</li>
+                    <li>Evaluating personal goals, skills, and interests</li>
                 </ol>
         </div>
         <div class="m-auto mt-4">
@@ -477,8 +385,7 @@ March, 2024.
                     </li>
                     <li>Obtaining financing options available for retired entrepreneurs
                     </li>
-                    <li>Outlining products/services, pricing, and competitive analysis
-                    </li>
+                    
                     <li>Managing personal finances along with business expenses
                     </li>
                 </ol>
@@ -512,16 +419,16 @@ March, 2024.
                     <li>Managing day-to-day operations efficiently
 
                     </li>
-                    <li>Planning for an exit strategy or succession planning
+                    <li>Setting up efficient supply chains and inventory management systems
                     </li>
-                    <li>Understanding mergers and acquisitions for retirement businesses
+                    <li>Implementing operational best practices
                     </li>
                 </ol>
         </div>
         <div class="m-auto mt-4">
                 <h3 class="bg-kindablue text-white font-semibold px-4 py-2 mx-4 rounded-md">08. GROWTH STRATEGIES AND SUCCESSION PLANNING</h3>
                 <ol class="font-light text-md list-disc mt-4 px-4">
-                    <li>Managing day-to-day operations efficiently
+                    <li>Developing strategies for business growth and expansion
 
                     </li>
                     <li>Planning for an exit strategy or succession planning
@@ -533,6 +440,55 @@ March, 2024.
 </div>
         </div>
         </div>
+
+
+
+      <div class="m-auto max-w-5xl">
+
+        <h2 class=" px-4 font-bold my-12 text-2xl text-center text-kindablue">
+          WHY ATTEND?
+        </h2>
+
+        <div class="flex m-auto flex-col sm:flex-row justify-between text-sm mt-4 mb-10">
+          <div class="text-3xl font-bold text-gray-200 mx-4 text-center">01</div>
+          <div class="text-blueish m-auto my-8 text-lg mt-2">Expert Guidance</div>
+          <div class="basis-1/2 mx-6 font-light">Our team of seasoned financial advisors and retirement experts will share their expertise, providing you with the tools and knowledge to make informed decisions about your retirement planning. With their guidance, you can navigate the complex world of investments, taxes, and savings, ensuring a secure and prosperous future.
+          </div>
+        </div>
+        <div class="flex m-auto flex-col sm:flex-row justify-between text-sm mt-4 mb-10">
+          <div class="text-3xl font-bold text-gray-200 mx-4 text-center">02</div>
+          <div class="text-blueish m-auto my-8 text-lg mt-2">Tailored Strategies</div>
+          <div class="basis-1/2 mx-6 font-light">We understand that everyone's retirement goals and circumstances are unique. That's why our seminar offers personalized strategies that can be adapted to your individual needs. Whether you dream of traveling the world, starting a new business, or simply maintaining a comfortable lifestyle, we will help you create a roadmap to turn your aspiratons into reality.
+          </div>
+        </div>
+        <div class="flex m-auto flex-col sm:flex-row justify-between text-sm mt-4 mb-10">
+          <div class="text-3xl font-bold text-gray-200 mx-4 text-center">03</div>
+          <div class="text-blueish m-auto my-8 text-lg mt-2">Comprehensive Topics</div>
+          <div class="basis-1/2 mx-6 font-light">Our seminar covers a wide range of essential topics, including:
+            <ul class="list-disc ml-4">
+              <li>Retirement savings and investment strategies</li>
+              <li>Tax-efficient planning and optimization</li>
+              <li> Social Security and Medicare optimization</li>
+              <li>Estate planning and asset protection</li>
+              <li>Creating a retirement income stream and many more</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex m-auto flex-col sm:flex-row justify-between text-sm mt-4 mb-10">
+          <div class="text-3xl font-bold text-gray-200 mx-4 text-center">04</div>
+          <div class="text-blueish m-auto my-8 text-lg mt-2">Interactive Sessions</div>
+          <div class="basis-1/2 mx-6 font-light">Our seminar is not just about passive learning. We believe in engaging and interactive sessions that encourage questions, discussions, and networking opportunities. You will have the chance to connect with like-minded individuals who share similar retirement aspirations, fostering a supportive community that can continue to inspire and motivate you long aer the seminar ends.
+          </div>
+        </div>
+        <div class="flex m-auto flex-col sm:flex-row justify-between text-sm mt-4 mb-10">
+          <div class="text-3xl font-bold text-gray-200 mx-4 text-center">05</div>
+          <div class="text-blueish m-auto my-8 text-lg mt-2">Exclusive Resources</div>
+          <div class="basis-1/2 mx-6 font-light">As a participant, you will gain access to exclusive resources, including informative materials, worksheets, and tools that will help you implement the strategies discussed during the seminar. These resources are designed to simplify the retirement planning process and empower you to take control of your financial future.
+          </div>
+        </div>
+        
+        </div>
+      
      
                 
 

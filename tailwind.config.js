@@ -9,6 +9,7 @@ module.exports = {
           'grayish' : '#515456',
           'kindagray' : '#252323',
           'sky' : '#E7F1F8' ,
+          'faintgray' : '#D9D9D9',
 
       },
       fontFamily: {
