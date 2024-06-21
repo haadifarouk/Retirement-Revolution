@@ -227,9 +227,9 @@
           <h3 class="text-2xl md:text-4xl px-2 font-bold">ABOUT THE SPEAKER</h3>
         </div>
         <div
-          class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse"
+          class="flex sm:flex-row-reverse sm:justify-between flex-col-reverse gap-20"
         >
-          <div class="flex flex-col sm:w-1/2 px-6 sm:px-4 m-auto sm:m-0">
+          <div class="flex flex-col sm:w-1/2 px-6 sm:px-4 m-auto sm:m-0 basis-1/2">
             <p class="text-md font-light text-kindagray">
               <span class="font-semibold">Daniel Young</span> is a multi-faceted
               and dynamic serial entrepreneur with a diverse range of interests
@@ -267,17 +267,20 @@
             </div>
           </div>
           <!-- picture and name -->
-          <div class="sm:relative flex flex-col h-1/6">
-            <img
-              class="h-1/6 relative sm:h-[300px] sm:w-[280px] w-[270px] mb-0 sm:m-0 m-auto"
+          <div class="relative flex flex-col basis-1/2 self-start">
+            <div class="max-sm:mx-auto w-4/5 sm:w-3/5 relative h-auto aspect-[591/540]">
+              <img
+              class="w-full h-auto object-cover -translate-x-4"
               src="assets/img/daniel.png"
               alt=""
             />
             <p
-              class="bg-kindablue shadow-md -translate-y- sm:translate-y-14 mb-12 sm:absolute sm:bottom-0 m-auto font-bold text-xl sm:ml-4 sm:py-2 sm:w-[250px] text-white px-10 py-2 rounded-lg"
+              class="bg-kindablue text-center shadow-md absolute -bottom-10 right-1/2 translate-x-[60%] m-auto font-bold text-xl py-2 w-full mx-5 text-white px-10 rounded-lg"
             >
             DANIEL YOUNG
-            </p>
+          </p>
+          <img src="./assets/img/d-young-bg.png" alt="" class="absolute -z-10 -bottom-5 h-4/5 w-[75%] left-0 translate-x-5 rounded-tl-[60%]">
+            </div>
           </div>
         </div>
       </section>
@@ -294,19 +297,17 @@
           EVENT DETAILS
         </h2>
 
-        <div class="md:grid gap-2 text-center  grid-cols-3 m-auto w-2/3 mt-6 mb-14 hidden">
+        <div class="text-center m-auto w-2/3 mt-6 mb-14 hidden md:block">
             <div class="text-sm font-light text-left mr-3">
               We have a 3-day insight- packed programme lined up, that you cannot afford to miss.
             </div>
 
-          
+            <div class="grid grid-cols-2 gap-3 mt-5">
                 <div class="text-sm bg-blueish rounded-md text-white py-4 min-w-2/3">Fee</div>
 
                 <div class="text-sm text-left px-2 bg-sky rounded-md text-black py-4 min-w-2/3">
                   ₦ 75,000
                 </div>
-
-                 <div></div>
 
                 <div class="text-sm bg-blueish rounded-md text-white py-3.5 min-w-2/3">Dates</div>
 
@@ -315,8 +316,6 @@
                   July 2024.
                 </div>
 
-                  <div></div>
-
                 <div class="text-sm bg-blueish rounded-md text-white py-6 min-w-2/3">Location</div>
 
                 <div class="text-xs px-2 text-left bg-sky rounded-md text-black py-4 min-w-2/3">
@@ -324,6 +323,7 @@
                   No. 8 Streamwood Estate,
                   Airport Road, Abuja.
                 </div>
+              </div>
             </div>
 
             
